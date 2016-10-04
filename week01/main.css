@@ -1,0 +1,38 @@
+body{
+	background:url(bigbang-made.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+div#M{
+	top:0px;
+    float: left;
+	width: 25%;
+	height:500px;
+	top:0px;
+}
+
+div#A{
+	width: 25%;
+	height:500px;
+	position: absolute;
+	left:330px;
+	top:0px;
+}
+
+div#D{
+	width: 25%;
+	height:500px;
+	position: absolute;
+	left:660px;
+	top:0px;
+}
+
+div#E{
+	top:0px;
+	float:right;
+	width: 25%;
+	height:500px;
+	top:0px;
+}
+

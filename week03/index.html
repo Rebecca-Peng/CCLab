@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+X: <input type="text" id="lat" name="latitude"><br>
+Y: <input type="text" id="long" name="longitude"><br>
+<input type="submit" id="mySearch" value="Search">
+
+<div id="googleMap1" style="width:400px;height:300px;"></div>
+<br>
+<div id="googleMap2" style="width:400px;height:300px;"></div>
+<br>
+
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+<script>
+var lat = 51.508742;
+var long = -0.120850;
+$( "#mySearch" ).click(function() {
+	 lat = $( "#lat").val();
+	 long = $( "#long").val();
+	 myMap();
+});
+
+
+function myMap() {
+  myCenter = new google.maps.LatLng(lat,long);
+  var mapOptions1 = {
+    center: myCenter,
+    zoom:9,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  var map1 = new google.maps.Map(document.getElementById("googleMap1"),mapOptions1);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map1);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+
+
+</body>
+</html>
