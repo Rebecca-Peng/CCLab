@@ -1,0 +1,3 @@
+[submodule "CClab2016"]
+	path = CClab2016
+	url = https://github.com/peterobbin/CClab2016.git
