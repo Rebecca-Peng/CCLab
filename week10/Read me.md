@@ -1,2 +1,2 @@
 #Read me
-##Video link:https:https://youtu.be/rkhrDC2W3L
+##Video link:https://www.youtube.com/watch?v=rkhrDC2W3LI
